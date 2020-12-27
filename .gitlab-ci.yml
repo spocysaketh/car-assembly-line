@@ -3,7 +3,7 @@ stages:
   -test
   
   
-  build the car:
+build the car:
   stage: build  
   script:
       - mkdir build
