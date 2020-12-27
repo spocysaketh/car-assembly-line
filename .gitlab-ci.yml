@@ -12,7 +12,7 @@ build the car:
       - echo "chassis" > car.txt
       - echo "engine" > car.txt
       - echo "wheels" > car.txt
-  srtifacts:
+  artifacts:
     paths:
       - build/car.txt
 
