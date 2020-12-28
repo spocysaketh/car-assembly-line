@@ -20,8 +20,8 @@ spackulous:
     - cd meta
     - echo $sai saketh >spackulous.txt
   artifacts:
-      paths:
-        - meta/spackulous.txt
+    paths:
+      - meta/spackulous.txt
     
 build the car:
   stage: build  
@@ -29,6 +29,9 @@ build the car:
     - echo "chassis" >> car.txt
     - echo "engine" >> car.txt
     - echo "wheels" >> car.txt
+  artifacts:
+    paths:
+      - build/car.txt
   
 
 test the car:
