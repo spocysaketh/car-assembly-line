@@ -19,7 +19,7 @@ spackulous:
     - mkdir meta
     - cd meta
     - echo $sai saketh >spackulous.txt
-    artifacts:
+  artifacts:
       paths:
         - meta/spackulous.txt
     
