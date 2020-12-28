@@ -18,6 +18,10 @@ spackulous:
   script:
     - mkdir meta
     - cd meta
+    - echo $sai saketh >spackulous.txt
+    artifacts:
+      paths:
+        - meta/spackulous.txt
     
 build the car:
   stage: build  
