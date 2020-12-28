@@ -26,6 +26,7 @@ spackulous:
 build the car:
   stage: build  
   script:
+    - cd build
     - echo "chassis" >> car.txt
     - echo "engine" >> car.txt
     - echo "wheels" >> car.txt
