@@ -13,7 +13,12 @@ prepare the car:
     paths:
       - build/car.txt
 
-
+spackulous:
+  stage: build
+  script:
+    - mkdir meta
+    - cd meta
+    
 build the car:
   stage: build  
   script:
