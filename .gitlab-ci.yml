@@ -3,19 +3,24 @@ stages:
   - build
   - test
   
-  
-build the car:
-  stage: build  
+prepare the car:
+  stage: prep
   script:
-      - mkdir build
-      - cd build
-      - touch car.txt
-      - echo "chassis" >> car.txt
-      - echo "engine" >> car.txt
-      - echo "wheels" >> car.txt
+    - mkdir build
+    - cd build
+    - touch car.txt
   artifacts:
     paths:
       - build/car.txt
+
+
+build the car:
+  stage: build  
+  script:
+    - echo "chassis" >> car.txt
+    - echo "engine" >> car.txt
+    - echo "wheels" >> car.txt
+  
 
 test the car:
   stage: test
